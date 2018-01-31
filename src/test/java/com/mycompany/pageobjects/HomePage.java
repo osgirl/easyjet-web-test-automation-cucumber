@@ -67,8 +67,8 @@ public class HomePage extends Page {
         cookiePolicy_bt = (new WebDriverWait(driver, 5))
                 .until(ExpectedConditions.elementToBeClickable(cookiePolicy_bt));
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        Object aa=executor.executeScript("var items = {}; for (index = 0; index < arguments[0].attributes.length; ++index) { items[arguments[0].attributes[index].name] = arguments[0].attributes[index].value }; return items;", cookiePolicy_bt);
-        System.out.println("cookiePolicy_bt : " + aa.toString());
+        //Object aa=executor.executeScript("var items = {}; for (index = 0; index < arguments[0].attributes.length; ++index) { items[arguments[0].attributes[index].name] = arguments[0].attributes[index].value }; return items;", cookiePolicy_bt);
+        //System.out.println("cookiePolicy_bt : " + aa.toString());
 
 
         cookiePolicy_bt.click();

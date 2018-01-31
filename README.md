@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pradeepk6/easyjet-web-test-automation-cucumber.svg?branch=master)](https://travis-ci.org/pradeepk6/easyjet-web-test-automation-cucumber)
+
 ##### About:
 e2e test automation of website: 
 http://easyjet.com

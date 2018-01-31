@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
@@ -52,6 +53,7 @@ final class WebDriverFactory {
             @Override
             public WebDriver newDriver(boolean headless) {
                 FirefoxOptions options = new FirefoxOptions();
+                options.setLogLevel(FirefoxDriverLogLevel.ERROR);
                 if (headless) options.addArguments("-headless");
                 return new FirefoxDriver(options);
             }
